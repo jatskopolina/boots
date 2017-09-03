@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+<meta charset="utf-8">
+<title>Песочница</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+	integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+	integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+	integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="shortcut icon" type="image/gif" href="images/icon.gif" />
+<style>
+img {
+	width: 100px;
+	height: 100px;
+}
+</style>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<ul class="menu">
+				<li><a href="index.html" target="_blank"> Главная </a></li>
+				<li><a href="Песочница.html"> Песочек</a></li>
+				<li><a href="статья о животных.html" target="_blank">В мире
+						животных</a></li>
+				<li><a href="Кошка.html" target="_blank"> О кошках</a></li>
+				<li><a href="Scripts.html" target="_blank"> Скрипты</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="content-text">
+		<h1>Хороший заголовок - это важно!</h1>
+		<p>Не менее важен хороший, длинный и увлекательный текст внутри
+			заголовка:) Этот вполне себе подходит.</p>
+		<a
+			href="https://news.yandex.ru/?msid=1499861877.49061.22907.5896&mlid=1499861371.glob_225"
+			target="_blank"> На этой странице можно найти множество хороших
+			текстов, если Вам недостаточно того, который я написала выше.</a>
+		<h2>Ниже приведена таблица с некоторыми животными:</h2>
+		<table class="table table-striped table-sm table-bordered">
+			<thead>
+				<tr>
+					<th>Изображение</th>
+					<th>Название</th>
+					<th>Цвет</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img src="images/croc.jpg" /></td>
+					<td>Крокодил</td>
+					<td>Зеленый</td>
+				</tr>
+				<tr>
+					<td><img src="images/cat.jpg" /></td>
+					<td>Котик</td>
+					<td>Серый</td>
+				</tr>
+				<tr>
+					<td><img src="images/raco.jpg" /></td>
+					<td>Енот</td>
+					<td>Цвет неясен (предположительно серо-коричневый, но я могу и
+						ошибаться, поэтому лучше уточнить у специалистов, если Вам это
+						вообще нужно, в чем я очень сомневаюсь, ведь эта страничка вообще
+						никому не интересна)</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>Хотелось бы заметить, что котики бывают разных цветов:</h2>
+		<ul>
+			<li>Белого</li>
+			<li>Черного</li>
+			<li>Рыжего</li>
+			<li>Цвета краски, в которую он свалился (то есть любого)</li>
+		</ul>
+		Больше о животном мире можно почитать <a
+			href="https://ru.wikipedia.org/wiki/Животные" target="_blank">
+			здесь</a>, только не стоит сильно доверять тому, что пишут в интернете:)
+		<form>
+			<h2 id="form)">Расскажите немного о себе.</h2>
+			<p>
+				Имя:<input type="text" />
+			</p>
+			<p>
+				У вас есть котик? <input type="radio" name="ex" value="yes" />Да,
+				разумеется <input type="radio" name="ex" value="no" />Пока нет
+			</p>
+			<p>
+				Каких авторов из нижеперечисленных вы читаете? <input
+					type="checkbox" name="read" value="Moam" />Моэм <input
+					type="checkbox" name="read" value="Bulgakov" />Булгаков <input
+					type="checkbox" name="read" value="Tsweig" />Цвейг <input
+					type="checkbox" name="read" value="Wilde" />Уайльд
+			</p>
+			<p>
+				<input type="submit" value="Отправить!" onclick="return false" />
+			</p>
+			Спасибо за ответы. Они никуда не отправятся и нигде не сохранятся.
+			Тем не менее, благодарю за уделение времени этому маленькому
+			опроснику. Возможно, он помог разобраться в себе.
+		</form>
+	</div>
+	<div class="footer-bg">
+		<div class="copyright">Страничка-песочница, приведенная к
+			нормальному виду. Материалы взяты с потолка.</div>
+	</div>
+</body>
+</html>

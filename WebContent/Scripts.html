@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Скрипты</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="shortcut icon" type="image/gif" href="images/icon.gif" />
+</head>
+<body>
+	<header>
+		<div class="header">
+			<ul class="menu">
+				<li><a href="index.html" target="_blank"> Главная </a></li>
+				<li><a href="Песочница.html" target="_blank"> Песочек</a></li>
+				<li><a href="статья о животных.html" target="_blank">В мире
+						животных</a></li>
+				<li><a href="Кошка.html" target="_blank"> О кошках</a></li>
+				<li><a href="Scripts.html"> Скрипты</a></li>
+			</ul>
+		</div>
+	</header>
+	<aside>
+		<div class="seealso">
+			<img src="images/truefalse.png" /> Проверь свою эрудицию!
+		</div>
+	</aside>
+	<div class="content-text">
+		<p>Итак, приступим! Для начала я от нечего делать выпишу числа от
+			нуля до ста.</p>
+		<script type="text/javascript">
+			for (var i = 0; i <= 100; i++) {
+				document.write(i + " ");
+			}
+		</script>
+		<p>Прекрасно, все работает. Мне определенно нравится этот язык. Я
+			прочитала туториал для новичков и хочу сказать, что все очень похоже
+			на java. Из заметных мне на данном этапе различий: объявление
+			переменных происходит через var и без указания их типа, команда
+			вывода другая. Функционал, конечно, поменьше. Где это видано- только
+			один числовой тип?? Хотя для своих целей наверно пойдет. Из
+			забавного- три знака равно в условиях. Мне казалось, это в джаве их
+			много- два. А тут аж три!</p>
+		<p>А потом я добралась до функций и объектов, и все стало не так
+			радужно и приятно... Ладно, нарисую пока таймер:)</p>
+		<div class="buttons">
+			<button onclick="restart()">Сбросить</button>
+			<button id="pause" onclick="pause()">Пауза</button>
+			<div id="timer"></div>
+			<div class="clearleft"></div>
+			<script type="text/javascript" src="scripts/Scr-timer.js"></script>
+		</div>
+		<p>Давайте пройдем за это время маленький тестик! Правдивы ли
+			утверждения?</p>
+		<form>
+			<p id="0">Первое место среди причин гибели от несчастных случаев
+				в Японии в 1995 году заняли туфли на высоком каблуке.</p>
+			<input type="radio" name="0" value="yes" />Да <input type="radio"
+				name="0" value="no" />Нет
+			<p id="1">Авторучку придумали древние египтяне.</p>
+			<input type="radio" name="1" value="yes" />Да <input type="radio"
+				name="1" value="no" />Нет
+			<p id="2">Пауки питаются собственной паутиной.</p>
+			<input type="radio" name="2" value="yes" />Да <input type="radio"
+				name="2" value="no" />Нет
+			<p id="3">Летучие мыши могут принимать радиосигналы.</p>
+			<input type="radio" name="3" value="yes" />Да <input type="radio"
+				name="3" value="no" />Нет
+			<p id="4">Если положить камбалу на шахматную доску, то она станет
+				клетчатой.</p>
+			<input type="radio" name="4" value="yes" />Да <input type="radio"
+				name="4" value="no" />Нет
+			<p id="5">Радугу можно увидеть и в полночь.</p>
+			<input type="radio" name="5" value="yes" />Да <input type="radio"
+				name="5" value="no" />Нет
+			<p id="6">В Японии ученики пишут на доске кисточкой с цветными
+				чернилами.</p>
+			<input type="radio" name="6" value="yes" />Да <input type="radio"
+				name="6" value="no" />Нет
+			<p id="7">Recaptcha используется для оцифровки книг.</p>
+			<input type="radio" name="7" value="yes" />Да <input type="radio"
+				name="7" value="no" />Нет
+			<p id="8">Монетки, кидаемые туристами в фонтаны, генерируют
+				огромные деньги государству.</p>
+			<input type="radio" name="8" value="yes" />Да <input type="radio"
+				name="8" value="no" />Нет
+			<p id="9">Лайм опасен для кошек и собак.</p>
+			<input type="radio" name="9" value="yes" />Да <input type="radio"
+				name="9" value="no" />Нет
+			<p>
+				<input type="submit" value="Проверить!"
+					onclick="getresult(); return false" />
+			</p>
+			<p id="results">Нажмите, чтобы узнать свой результат.
+				Утверждения, в правильности которых Вы ошиблись или сомневаетесь,
+				станут красными, верно отмеченные - зелеными.</p>
+		</form>
+		<script type="text/javascript" src="scripts/Scr-test.js"></script>
+	</div>
+	<footer>
+		<div class="footer-bg">
+			<div class="copyright">Страничка, созданная для игры в
+				JavaScript</div>
+		</div>
+	</footer>
+</body>
+</html>
