@@ -3,23 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Bootstrap</title>
-<!-- <link rel="stylesheet" href="styles.css" /> -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-	crossorigin="anonymous" />
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-	integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-	crossorigin="anonymous"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-	integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-	crossorigin="anonymous"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-	integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-	crossorigin="anonymous"></script>
 
+<link rel="stylesheet" href="bootstrap.min.css" />
+<link rel="stylesheet" href="style.css" />
+<script src="scripts/jquery-1.11.1.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
 <link rel="shortcut icon" type="image/gif" href="images/icon.gif" />
 <style>
 img {
@@ -30,31 +18,29 @@ img {
 </style>
 </head>
 <body>
-	<!-- Классы navbar и navbar-default (базовые классы меню) -->
-	<nav class="navbar navbar-default">
-		<!-- Контейнер (определяет ширину Navbar) -->
-		<div class="container-fluid">
-			<!-- Заголовок -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
 			<div class="navbar-header">
-				<!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
 				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#navbar-main">
-					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<!-- Бренд или название сайта (отображается в левой части меню) -->
-				<a class="navbar-brand" href="#">Brand</a>
+				<a class="navbar-brand" href="index.html" target="_blank">Мой
+					странный сайт</a>
 			</div>
-			<!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
-			<div class="collapse navbar-collapse" id="navbar-main">
-				<!-- Содержимое основной части -->
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="index.html" target="_blank"> Главная </a></li>
 					<li><a href="Песочница.html" target="_blank"> Песочек</a></li>
 					<li><a href="статья о животных.html" target="_blank">В
 							мире животных</a></li>
 					<li><a href="Кошка.html" target="_blank"> О кошках</a></li>
 					<li><a href="Scripts.html" target="_blank"> Скрипты</a></li>
+					<li><a href="Animation.html" target="_blank">Анимация</a></li>
+					<li><a href="Flexpage.html" target="_blank">Flex</a></li>
+					<li><a href="Bootstrappage.html" target="_blank">Bootstrappage</a></li>
 				</ul>
 			</div>
 		</div>
@@ -218,10 +204,6 @@ img {
 				какая-нибудь. Реклама, например.</div>
 		</div>
 	</div>
-	<footer>
-		<div class="footer-bg">
-			<div class="copyright">Честно уперто с сайта jbio.ru</div>
-		</div>
-	</footer>
+	<footer> Честно уперто с сайта jbio.ru </footer>
 </body>
 </html>
