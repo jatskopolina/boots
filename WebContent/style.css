@@ -1,35 +1,26 @@
+/* цвет фона и рамки навигационного меню */
 .navbar-default {
 	background-color: #0fe3f4;
 	border-color: #0fe3f4;
 }
-
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
+/* цвет бренда и пунктов навигационного меню в обычном состоянии и при наведении */
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
 	color: white;
-	font-family: cursive;
 }
 
-.navbar-default .navbar-toggle {
-	border-color: #0fe3f4;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover
 	{
-	background-color: #0fe3f4;
+	color: black;
 }
 
+/* Цвет рамки и фона у кнопки, которая открывает меню */
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover {
+	border-color: white;
+}
+
+/* Цвет полосочек в кнопочке, которая открывает меню */
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #ecf0f1;
-}
-
-@media ( max-width : 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
-		color: #ecf0f1;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
-		.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
-		color: #d1ffed;
-		background-color: #0fe3f4;
-	}
+	background-color: black;
 }
 
 body {
